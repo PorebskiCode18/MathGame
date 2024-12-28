@@ -1,0 +1,101 @@
+<!-- A level-->
+<!-- I think the code is so long that webstorm bugs out making some features not work-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="title">Math Game</h1>
+</header>
+<section>
+    <article>
+        <button type="button" onclick="Player1()" id="1Play">1 Player</button>
+        <button type="button" onclick="Player2()" id="2Play">2 Players</button>
+        <p id="numPlays">Number Of Players:</p>
+        <br>
+        <input id="Name1" type="text" value="Player 1 Name Here">
+        <input id="Name2" type="text" value="Player 2 Name Here">
+        <button type="button" onclick="SubNames()" id="submit">Submit Names</button>
+        <br>
+        <br>
+        <button type="button" onclick="Start()" id="St">Start Game</button>
+        <h3 id="playTurn">Player Turn:</h3>
+        <p id="question2"></p>
+        <input id="answerToCheck2" type="text" value="Answer Here" id="inp2">
+        <button type="button" id="Chk2" onclick="Check()">Check Answer</button>
+        <p id="Correct2">Are you correct:</p>
+        <button type="button" onclick="Next()" id="Next2">Next Question</button>
+
+        <button type="button" id="NameChg" onclick="NameChange()">Change Name</button>
+        <input id="NewName" type="text" value="Write New Name Here">
+        <button type="button" onclick="SubNewName()" id="NewSubmit">Submit Name</button>
+        <button type="button" id="ez" onclick="easy()">Easy Level</button>
+        <button type="button" id="mid" onclick="medium()">Medium Level</button>
+        <button type="button" id="hrd" onclick="hard()">Hard Level</button>
+        <button type="button" id="add" onclick="addition()">Addition</button>
+        <button type="button" id="sub" onclick="subtraction()">Subtraction</button>
+        <button type="button" id="mul" onclick="multiplication()">Multiplication</button>
+        <button type="button" id="mix" onclick="mixed()">Mixed</button>
+
+        <p id="CurLevel">Current Level:</p>
+        <p id="question"></p>
+        <input id="answerToCheck" type="text" value="Answer Here" id="inp">
+        <button type="button" id="Chk" onclick="Check()">Check Answer</button>
+        <p id="Correct">Are you correct:</p>
+        <button type="button" onclick="Next()" id="Next">Next Question</button>
+        <h2 id="Badges">Badges Earned:</h2>
+        <img src="bronzePlus.webp" id="plus1" style="width:100px;height:100px;">
+        <img src="silverPlus.jfif" id="plus2" style="width:100px;height:100px;">
+        <img src="goldPlus.jpg" id="plus3" style="width:100px;height:100px;">
+        <img src="specialAdd.jpg" id="perfectPlus" style="width:100px;height:100px;">
+        <br>
+        <img src="bronzeMinus.png" id="minus1" style="width:100px;height:100px;">
+        <img src="silverMinus.webp" id="minus2" style="width:100px;height:100px;">
+        <img src="goldMinus.webp" id="minus3" style="width:100px;height:100px;">
+        <img src="specialMinus.png" id="perfectMinus" style="width:100px;height:100px;">
+        <br>
+        <img src="bronzeMult.jfif" id="mult1" style="width:100px;height:100px;">
+        <img src="silverMult.jpg" id="mult2" style="width:100px;height:100px;">
+        <img src="goldMult.jpg" id="mult3" style="width:100px;height:100px;">
+        <img src="specialMult.jpg" id="perfectMult" style="width:100px;height:100px;">
+        <br>
+        <img src="bronzeMixed.jpg" id="mix1" style="width:100px;height:100px;">
+        <img src="silverMixed.webp" id="mix2" style="width:100px;height:100px;">
+        <img src="goldMixed.jpg" id="mix3" style="width:100px;height:100px;">
+        <img src="specialMixed.jpg" id="perfectMix" style="width:100px;height:100px;">
+        <br>
+        <img src="perfect.jpg" id="perfectTotal" style="width:100px;height:100px;">
+        <img src="SecretBadge.jpg" id="Secret" style="width:100px;height:100px;">
+        <br>
+    </article>
+
+    <nav>
+        <p id="Player1Cor">Player 1 # right:</p>
+        <p id="Player1Wor">Player 1 # wrong:</p>
+        <p id="Player2Cor">Player 2 # right:</p>
+        <p id="Player2Wor">Player 2 # wrong:</p>
+        <h2 id="winner"></h2>
+        <p id="AddCor">You got 0 addition questions correct</p>
+        <p id="AddWrong">You got 0 addition questions wrong</p>
+        <br>
+        <p id="SubCor">You got 0 subtraction questions correct</p>
+        <p id="SubWrong">You got 0 subtraction questions wrong</p>
+        <br>
+        <p id="MulCor">You got 0 multiplication questions correct</p>
+        <p id="MulWrong">You got 0 multiplication questions wrong</p>
+        <br>
+        <p id="MixCor">You got 0 mixed questions correct</p>
+        <p id="MixWrong">You got 0 mixed questions wrong</p>
+        <br>
+        <h3 id="highScore">Lowest # Questions Wrong:</h3>
+    </nav>
+
+</section>
+
+</body>
+</html>
